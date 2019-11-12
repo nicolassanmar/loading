@@ -6,7 +6,7 @@ var pos = 0;
 
 function setup() {
    
-  createCanvas(500, 500);
+  createCanvas(windowWidth, windowHeight);
   colors[0] = '#E2474B';
   colors[1] = '#2F3A56';
   colors[2] = '#406D96';
@@ -16,6 +16,10 @@ function setup() {
   angleMode(DEGREES);
     
   rectMode(CENTER);
+}
+
+function windowResized(){
+  resizeCanvas(windowWidth, windowHeight);
 }
 
 function draw() {
@@ -93,6 +97,7 @@ function draw() {
   ellipseMode(RADIUS);
   strokeWeight(4);
   
+   /*
   console.log(pos);
   stroke(168,208,218,360/(pos/2.5));
   circle(0,0,25);
@@ -101,5 +106,5 @@ function draw() {
   circle(-pos,-pos,25);
   circle(pos,pos,25);
   pop();
-  
+  */
 }
