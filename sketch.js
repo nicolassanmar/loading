@@ -6,7 +6,7 @@ var pos = 0;
 
 function setup() {
    
-  createCanvas(windowWidth, windowHeight);
+  var cnv = createCanvas(windowWidth, windowHeight);
   colors[0] = '#E2474B';
   colors[1] = '#2F3A56';
   colors[2] = '#406D96';
@@ -16,6 +16,8 @@ function setup() {
   angleMode(DEGREES);
     
   rectMode(CENTER);
+  cnv.canvas.style.display = 'block';
+
 }
 
 function windowResized(){
