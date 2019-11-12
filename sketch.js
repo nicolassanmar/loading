@@ -29,26 +29,26 @@ function draw() {
   
   
   
-  let dou = ((millis()/1000)%60).toFixed(2);
+  //let dou = ((millis()/1000)%60).toFixed(2);
   
   let target = second() + (millis()/10000)%15;
   let force = target - pos;
   
-  let pos2 = 0;
-  let vel2=0;
-  let force2 = dou - pos2;
+  //let pos2 = 0;
+  //let vel2=0;
+  //let force2 = dou - pos2;
   
   force *=strength;
-  force2 *=strength;
+  //force2 *=strength;
   
   vel*=drag;
   vel+=force;
   
-  vel2*=drag;
-  vel2+=force2;
+  //vel2*=drag;
+ // vel2+=force2;
   
   pos += vel;
-  pos2+=vel2;
+ // pos2+=vel2;
   //fill(255);
   //rect(1,1,1,1);
   
